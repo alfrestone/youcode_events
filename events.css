@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background: #0b101b;
+    color: #e8edf4;
+}
+
+header {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 20px 40px;
+    width: 100%;
+    color: black;
+}
+
+header .btnLog {
+    margin-left: auto;
+}
+main {
+    background: black;
+}
