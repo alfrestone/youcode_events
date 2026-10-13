@@ -1,28 +1,94 @@
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
-    margin: 0;
-    background: #0b101b;
-    color: #e8edf4;
+    background: #ffffff;
+    color: black;
 }
 
 header {
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #ffffff;
     height: 80px;
-    padding: 20px 40px;
+    padding: 20px 70px;
     width: 100%;
     color: black;
 }
 
-header .btnLog {
-    margin-left: auto;
+.event-p {
+    color: firebrick;
 }
-main {
-    background: black;
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.HeaderDetails {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+}
+
+header .btnLog {
+    font-size: 20px;
+    width: 90px;
+    background: brown;
+    color: #ffffff;
+    border: none;
+}
+
+.eventIntro {
+    background: blanchedalmond;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    height: 180px;
+    padding-left: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.desc-intro {
+    max-width: 700px;
+    font-size: medium;
+}
+
+.num_even {
+    font-family: "Abadi MT Condensed Light", serif ;
+}
+
+.hero {
+    margin: 40px 60px 40px 60px;
+}
+
+.Grid-Hero {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    padding: 10px 10px 10px 10px;
+    gap: 24px;
+}
+
+.Grid-Hero img {
+    width: 100%;
+    height: 250px;
+    display: flex;
 }
