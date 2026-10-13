@@ -271,3 +271,34 @@ margin: 10px; }
 }
 
 
+
+/* SECTION 3  */
+
+.status-Container{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;          
+    background-color: #C2410C;    
+    padding: 40px 20px;     /* top and bottom. left and right  */
+    width: 100%;
+}
+
+.stat-item {
+    text-align: center; 
+    color: white;
+}
+
+.stat-item h3 {
+font-family: 'Bricolage Grotesque', sans-serif;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+
+}
+
+.stat-item p {
+font-family: 'DM Sans', sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+
