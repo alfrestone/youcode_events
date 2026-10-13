@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
     <title>YouCode Events - Intervenants et partenaires</title>
 </head>
+
 <body>
 
     <!-- Header / Navigation -->
@@ -13,28 +20,27 @@
             <strong>YouCode <span>Events</span></strong>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <a href="#">Accueil</a>
+                <a href="#">Événements</a>
+                <a href="#" id="selected_page">Intervenants</a>
+                <a href="#" id = "register_button">S'inscrire</a>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section>
+    <section class="top-section">
         <h1>Intervenants et partenaires</h1>
         <p>Les professionnels qui animent les événements YouCode et les entreprises qui les soutiennent.</p>
     </section>
 
     <!-- Main Content -->
     <main>
-        
+
         <!-- Intervenants Section -->
         <section>
             <h2>Intervenants</h2>
-            
+
             <div>
                 <!-- Card 1 -->
                 <article>
@@ -90,7 +96,7 @@
         <section>
             <h2>Partenaires</h2>
             <p>Ils accueillent nos événements, proposent des intervenants ou des sujets pour les hackathons.</p>
-            
+
             <ul>
                 <li>
                     <span>[Logo]</span> Atlas Numérique
@@ -152,4 +158,5 @@
     </footer>
 
 </body>
+
 </html>
