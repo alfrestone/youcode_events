@@ -60,12 +60,12 @@
     text-decoration: none;
 }
 
+/* SECTION 1 */
 
 .section1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 468px;
     width: 100%;
     background-color: #FFEDD5;
 }
@@ -104,6 +104,7 @@
     font-family: 'DM Sans', sans-serif;
 
     line-height: 25px;
+   
 
 }
 .btn-section1{
@@ -150,7 +151,6 @@ border-radius: 12px;
 }
 
 .image-section1 img{
-    height: 250px;
     width: 370px;
 
 }
@@ -158,8 +158,7 @@ border-radius: 12px;
 
 /* SECTION 2  */
 .section2{
-    width: 100%;
-    height: 612px;
+width: 100%;
 padding: 30px;
 
 }
@@ -171,8 +170,6 @@ padding: 30px;
 
 
 .s2div2 div{
-height: 414px;
-width: 382px;
 border-radius: 15px;
 border-style: solid;
 border-color: #E7E5E4;
@@ -181,7 +178,6 @@ border-color: #E7E5E4;
 .div2 > img:first-child{
 border-radius: 11px 11px 0px 0px;
 width: 100%;
-height: 202px;
 }
 .s2div2{
     
@@ -203,7 +199,7 @@ height: 202px;
 #atelier{
     background-color: #FFEDD5;
     color: #9A3412;
-height: 28px;
+    height: 28px;
     width: 69px;
 }
 
@@ -376,7 +372,6 @@ footer{
     background-color: #1C1917;
     color: #FFFFFF;
     width: 100%;
-    height: 329px;
     padding: 40px;
 }
 
@@ -449,3 +444,118 @@ font-size: 14px;
 .fleche{
    margin-left: 3px;
  }
+
+
+ /* maintenant pour MEDIA QUERIES first WITH PHONE */
+
+ @media only screen and (max-width:700px){
+
+    
+    .nav-right{
+        display: none;
+    }
+    /* commence avec SECTION 1 */
+    .section1 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .div1section1{
+        padding: 25px 20px;
+        width: 100%;
+    }
+     .section1 h1 {
+        font-size: 34px;
+    }
+
+    .section1 p {
+        font-size: 16px;     
+    }
+    .btn-section1{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .image-section1 img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* SECTION 2 */
+   
+    .s2div1{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .s2div2{
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2div2 div{
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+
+    /* SECTION 3 DANS MOBILE */
+    .status-Container div{
+       width: 40%;
+    }
+    .status-Container{
+         flex-wrap: wrap;
+    }
+
+    /* SECTION 4 DANS MOBILE */
+    .cards-container{
+        flex-direction: column;
+    }
+    .category-card{
+            width: 100%;
+    }
+    /* FOOTER */
+
+    .footer-top{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+ }
+
+    /* ADAPTIBLE MODE TABLETTE */
+   @media screen and (min-width:701px) and (max-width:1024px) {
+   
+    .navbar{
+    display: flex;
+    justify-content: space-between;}
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* SECTION 2 em mode tabltette */
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+   
+    .s2div2 div{
+      width: 48%;
+      
+    }
+    .s2div2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+   
+   }
