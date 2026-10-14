@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
 header  {
 display: flex;
 }
@@ -28,9 +33,116 @@ color: black;
     border-radius: 5px;
     color: white;
     background-color: brown;
-    border-color: brown;
+    border-color:maroon;
     font-family:sans-serif;
+    
+}
+.inscri {
+    padding-left:100px;
+    padding-top: 30px;
+   background-color:bisque;
+   height:150px;
+   width: 100%;
+}
+
+
+
+
+
+
+#in{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.input12{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:solid gainsboro;
+    
+}
+#colpre{
+    border: solid darkgreen;
+}
+#coladres{
+    border: solid brown;
+    
+    
+}
+#selec{
+    padding: 10px 10px;
+    border-radius:5px ;
+}
+.backgrond{
+ background-color:#FAFAF9;   
+ padding-top: 40px;
+}
+.infor{
+ 
+ display: flex;
+ justify-content: center;
+ background-color:white;
+ width: 50%;
+ margin: auto;
+ margin-top: 50px;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ border-radius: 30px;
+}
+.info1 h1,p{
+    margin-bottom: 5px;
+}
+
+div span {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.divAdress{
+    margin-top: 10px;
+        display: flex;
+    gap: 20px;
+}
+
+.divNOM{
+    display: flex;
+    gap: 20px;
+}
+
+#p1{
+    padding-left: 230px;
+    color:darkgreen;
     
 
 }
+#colpara{
+    color: brown;
+}
+.mF{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+#mfI{
+    padding: 50px;
+    border-radius: 5px;
+    
+}
+
+.div{
+    margin-top: 40px;
+    
+}
+body button{
+    
+    padding: 10px 20px ;
+    border-radius: 5px;
+    color: white;
+    background: brown;
+    border-color:maroon;
+    font-family:sans-serif;
+}
+
+
 

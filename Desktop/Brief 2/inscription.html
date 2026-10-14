@@ -1,28 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription</title>
 </head>
+
 <body>
     <header>
-<div class="logo"><h1>YouCode Events</h1></div>
-<nav class="links">
-<a href="">Accueil</a>
-        <a href="">Evenements</a>
+        <div class="logo">
+            <h1>YouCode Events</h1>
+        </div>
+        <nav class="links">
+            <a href="">Accueil</a>
+            <a href="">Evenements</a>
             <a href="">intervents</a>
-</nav>
-    
-<div>
- <button id="but1">S'inscrire</button>
-</div>
-   
+        </nav>
+
+        <div>
+            <button id="but1">S'inscrire</button>
+        </div>
+
 
     </header>
+    <main>
+        <section class="inscri">
+            <div>
+                <h1 id="in">inscription</h1>
+                <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est
+                    gratuite.</p>
+            </div>
+        </section>
 
 
-    
+<div class="backgrond">
+
+            <section class="infor">
+            <form class="formC" action="">
+                <div class="info1">
+                    <h1><strong>Vos information </strong> </h1>
+                    <p>les champs marque * sont obligatoires</p>
+                </div>
+<div class="div">
+                <div class="divNOM">
+                    <span class="espace"><label id="N1" for="">Nom *</label>
+                        <input class="input12" placeholder="votre nom" type="text" name="vote nom"></span>
+                    <span class="espace" > <label for="">Prenom *</label>
+                        <input class="input12" id="colpre" placeholder="votre Prenom" type="text"> </span>
+                </div>
+                <div>
+                    <p id="p1">Champ valide.</p>
+                </div>
+</div>
+
+
+<div class="div">
+                <div class="divAdress">
+                    <span> <label for="">Adresse e-mail *</label>
+                        <input class="input12" id="coladres" placeholder="votre e-mail" type="email"></span>
+
+                    <span><label for="">Telephone</label>
+                        <input class="input12" placeholder="votre Telephone" type="number"> </span>
+
+
+                </div>
+                <div>
+                    <p id="colpara">Erreur : saissez une Adresse <br> valide,par exemple <br> nom@domaine.ma </p>
+                </div>
+</div>
+
+
+
+
+
+
+                <div class="div">
+                    <span>
+                        <label for="">Evenement choisi</label>
+                        <select  name="Evenement" id="selec">Evenement
+                            <option value="">Youcode Evenement</option>
+                        </select>
+                    </span>
+
+                </div>
+
+               
+            <div class="div">
+            <div>
+                    <h4>Nevau *</h4>
+                </div>
+                <div >
+
+                    <input type="radio"> <label for="">debutant</label>
+                    <input type="radio"> <label for="">intermedier</label>
+                    <input type="radio"> <label for="">Avance</label>
+
+                </div>
+         </div>
+                
+               <div class="mF"> <label  for=""> Message(facultatif)</label>
+                        <input id="mfI" placeholder="Vos attentes,Vos question..." type="text">
+
+                </div>
+                <div class="div">
+                    <input type="checkbox">
+                    <label for="">J'accepte que mes donnes servent a gerer mon inscription.*</label>
+
+                </div>
+                <div class="div">
+                    <button>Valider mon inscription</button>
+                </div>
+            </form>
+        </section>
+
+</div>
+
+
+
+    </main>
+
+
+
 </body>
+
+
 </html>
