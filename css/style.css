@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -226,6 +227,8 @@ font-weight: 700;
 font-size: 32px;
 }
 .section2 h4{
+display: flex;
+align-items: center;
 font-family: 'DM Sans', sans-serif;
 font-weight: 600;
 font-size: 17px;
@@ -238,7 +241,7 @@ color: #C2410C;
 font-family: 'Bricolage Grotesque', sans-serif;
 font-weight: 600;
 font-size: 22px;
-margin: 10px; }
+margin-left: 10px; }
 
 
 .div2 p , .div2 p img{
@@ -268,6 +271,7 @@ margin: 10px; }
     font-size: 18px;
     color: #C2410C;
     cursor: pointer;
+    margin-bottom: 25px;
 }
 
 
@@ -283,12 +287,12 @@ margin: 10px; }
     width: 100%;
 }
 
-.stat-item {
+.status-item {
     text-align: center; 
     color: white;
 }
 
-.stat-item h3 {
+.status-item h3 {
 font-family: 'Bricolage Grotesque', sans-serif;
 font-weight: 700;
 font-size: 40px;
@@ -296,7 +300,7 @@ line-height: 46px;
 
 }
 
-.stat-item p {
+.status-item p {
 font-family: 'DM Sans', sans-serif;
 font-weight: 400;
 font-size: 16px;
@@ -314,7 +318,7 @@ font-size: 16px;
 }
 
 
-/* SECTION 4 CARD CONTAINER */
+/* SECTION 4 les cartes */
 
 .cards-container {
     display: flex;
@@ -439,3 +443,9 @@ font-size: 14px;
 }
 
 
+/* EDITER LA FLECHE */
+
+
+.fleche{
+   margin-left: 3px;
+ }
