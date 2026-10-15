@@ -13,15 +13,17 @@ padding-left: 50px;
 .logo{
     
     margin-top:  10px;
-    /* margin-left:100px; */
+   
     color: brown;
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.menu-toggle{
+    display: none;
+}
 .links {
-    /* margin-top:20px ;
-    margin-left: 600px;
-    padding-right: 10px; */
+  
     width: 70%;
     display: flex;
     justify-content: end;
@@ -153,7 +155,6 @@ footer{
     background-color: #1C1917;
     color: #FFFFFF;
     width: 100%;
-    height: 329px;
     padding: 40px;
 }
 
@@ -221,14 +222,18 @@ font-size: 14px;
 
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:768px){
     .information-section{
-        padding: 2px;
+        padding: 1px;
     }
  
-   .links {
+   .hidden-links-in-mobile {
        display: none;
     }
+    .menu-toggle{
+        display: block;
+    }
+   
     
     .Title-inscri {
         display: flex;
@@ -275,6 +280,9 @@ font-size: 14px;
         align-items: center;
         
     }
+   #acce{
+    margin-left: 10px;
+   }
     .footer-top{
         display: flex;
         flex-direction: column;
