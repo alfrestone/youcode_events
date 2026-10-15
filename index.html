@@ -23,7 +23,7 @@
 
         </nav>
         <div class="nav-btn">
-          <button>S'inscrire</button>
+          <button><a href="inscription.html">S'inscrire </a></button>
         </div>
       </div>
                 <div class="menu"><i class="fa-solid fa-bars"></i></div>
@@ -45,8 +45,8 @@
           consultez le programme et inscrivez-vous en quelques clics.
         </p>
         <div class="btn-section1">
-          <button class="btn1-section1">Voir les événements</button>
-          <button class="btn2-section1">S'inscrire</button>
+          <button class="btn1-section1"><a href="events.html">Voir les événements</a></button>
+          <button class="btn2-section1"><a href="inscription.html">S'inscrire</a></button>
         </div>
       </div>
 
@@ -223,10 +223,10 @@
         <div class="navigation-events">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Événements</a></li>
-            <li><a href="#">Intervenants et partenaires</a></li>
-            <li><a href="#">Inscription</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="events.html">Événements</a></li>
+            <li><a href="intervenants.html">Intervenants et partenaires</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
           </ul>
         </div>
 
@@ -247,6 +247,14 @@
       </div>
     </footer>
 
-     <script src="script.js"></script>
+     <script>
+const menu = document.querySelector(".menu");
+const navRight = document.querySelector(".nav-right");
+
+menu.addEventListener("click", function () {
+    navRight.classList.toggle("open");
+});
+</script>
+
   </body>
 </html>
