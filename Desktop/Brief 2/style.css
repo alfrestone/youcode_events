@@ -6,19 +6,27 @@
 }
 header  {
 display: flex;
-
+justify-content: space-between;
+padding: 10px 0;
+padding-left: 50px;
 }
 .logo{
+    
     margin-top:  10px;
-    margin-left:100px;
+    /* margin-left:100px; */
     color: brown;
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .links {
-    margin-top:20px ;
+    /* margin-top:20px ;
     margin-left: 600px;
-    padding-right: 10px;
+    padding-right: 10px; */
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2vw;
   
   }
   .links a{
@@ -29,8 +37,8 @@ color: black;
 
   }
 #but1{
-    margin-top: 10px;
-    margin-left: 20px;
+    /* margin-top: 10px;
+    margin-left: 20px; */
     padding: 10px 20px ;
     border-radius: 5px;
     color: white;
@@ -39,12 +47,15 @@ color: black;
     font-family:sans-serif;
     
 }
+
+
+
 .inscri {
     padding-left:100px;
     padding-top: 30px;
    background-color:bisque;
    height:150px;
-   width: 100%;
+
 }
 
 
@@ -62,34 +73,27 @@ color: black;
     border:solid gainsboro;
     
 }
-#colpre{
-    border: solid darkgreen;
-}
-#coladres{
-    border: solid brown;
-    
-    
-}
+
 #selec{
     padding: 10px 10px;
     border-radius:5px ;
 }
 .backgrond{
  background-color:#FAFAF9;   
-
+display:flex;
+justify-content: center;
+align-items: center;
  padding-top: 40px;
  padding-bottom: 80px;
 }
 .information-section{
- 
  display: flex;
  justify-content: center;
  background-color:white;
- width: 50%;
+ width: auto;
  margin: auto;
  margin-top: 30px;
- padding-top: 40px;
- padding-bottom: 30px;
+ padding: 40px;
  border-radius: 30px;
 }
 .div{
@@ -117,15 +121,8 @@ div span {
     gap: 20px;
 }
 
-#p1{
-    padding-left: 230px;
-    color:darkgreen;
-    
 
-}
-#colpara{
-    color: brown;
-}
+
 .MessageFac{
     margin-top: 40px;
     display: flex;
@@ -221,3 +218,65 @@ font-family: 'DM Sans', sans-serif;
 font-weight: 400;
 font-size: 14px;
 }
+
+
+
+@media only screen and (max-width:700px){
+    .information-section{
+        padding: 2px;
+    }
+ 
+   .links {
+       display: none;
+    }
+    
+    .Title-inscri {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+     .inscri{
+       padding: 10px;
+     
+   }
+    .divNOM{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+    .divNOM span input{
+
+               flex-wrap: wrap;
+               width: 100%;
+    }
+    .divAdress{
+                display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+    .divAdress{
+         flex-wrap: wrap;
+         width: 100%;
+    }
+  
+   .MessageFac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+    .div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+    }
+} 
