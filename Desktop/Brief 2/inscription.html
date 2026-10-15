@@ -171,7 +171,12 @@
             <p>&copy; 2026 YouCode Events — site fictif réalisé en formation.</p>
         </div>
     </footer>
-<script src="menu.js"></script>
+<script>const menu = document.querySelector(".menu");
+const navRight = document.querySelector(".links");
+
+menu.addEventListener("click", function () {
+    navRight.classList.toggle("open");
+});</script>
 </body>
 
 
