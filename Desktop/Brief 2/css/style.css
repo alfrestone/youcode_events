@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+header  {
+display: flex;
+justify-content: space-between;
+padding: 10px 0;
+padding-left: 50px;
+}
+.logo{
+    
+    margin-top:  10px;
+   
+    color: brown;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    display: none;
+}
+.links {
+  
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2vw;
+  
+  }
+  .links a{
+padding-left: 10px;
+color: black;
+ text-decoration: none;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+#but1{
+    /* margin-top: 10px;
+    margin-left: 20px; */
+    padding: 10px 20px ;
+    border-radius: 5px;
+    color: white;
+    background-color: brown;
+    border-color:maroon;
+    font-family:sans-serif;
+    
+}
+
+
+
+.inscri {
+    padding-left:100px;
+    padding-top: 30px;
+   background-color:bisque;
+   height:150px;
+
+}
+
+
+
+
+
+
+#in{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.input12{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:solid gainsboro;
+    
+}
+
+#selec{
+    padding: 10px 10px;
+    border-radius:5px ;
+}
+.backgrond{
+ background-color:#FAFAF9;   
+display:flex;
+justify-content: center;
+align-items: center;
+ padding-top: 40px;
+ padding-bottom: 80px;
+}
+.information-section{
+ display: flex;
+ justify-content: center;
+ background-color:white;
+ width: auto;
+ margin: auto;
+ margin-top: 30px;
+ padding: 40px;
+ border-radius: 30px;
+}
+.div{
+    margin-top: 40px;
+    
+}
+.Title-inscri h1,p{
+    margin-bottom: 5px;
+}
+
+div span {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.divAdress{
+    margin-top: 10px;
+        display: flex;
+    gap: 20px;
+}
+
+.divNOM{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.MessageFac{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+#mfI{
+    padding: 50px;
+    border-radius: 5px;
+    
+}
+
+
+body button{
+    
+    padding: 10px 20px ;
+    border-radius: 5px;
+    color: white;
+    background: brown;
+    border-color:maroon;
+    font-family:sans-serif;
+}
+
+
+
+
+footer{
+    background-color: #1C1917;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 40px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.description-events h3{
+font-family: 'Bricolage Grotesque', sans-serif;
+font-weight: 600;
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+.description-events p{
+font-family: 'DM Sans', sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+}
+
+.navigation-events h4 , .contact-events h4{
+font-family: 'DM Sans', sans-serif;
+font-weight: 600;
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+.navigation-events a{
+text-decoration: none;
+font-family: 'DM Sans', sans-serif;
+font-weight: 400;
+font-size: 14px;
+color: white;
+line-height: 1.6;
+}
+.navigation-events ul{
+   list-style: none;
+}
+
+.contact-events a{
+    text-decoration: none;
+    color: #ffff;
+    line-height: 2;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;  
+}
+.contact-events{
+font-family: 'DM Sans', sans-serif;
+line-height: 2;
+}
+
+.ligne-footer {
+margin: 40px;
+color: #57534E;
+}
+
+.footer-bottom p{
+font-family: 'DM Sans', sans-serif;
+font-weight: 400;
+font-size: 14px;
+}
+
+
+
+@media only screen and (max-width:768px){
+ 
+ 
+   .links {
+       display: none;
+    }
+    .menu {
+        display: block;
+    }
+   
+    .links.open{
+        margin-top: 35px;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        background-color: #8d622a;
+        border-radius: 15px;
+        position: absolute;
+        top: 40px;
+    }
+
+
+
+    .Title-inscri {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+     .inscri{
+       padding: 10px;
+     
+   }
+    .divNOM{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+    .divNOM span input{
+
+               flex-wrap: wrap;
+               width: 100%;
+    }
+    .divAdress{
+                display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+    .divAdress{
+         flex-wrap: wrap;
+         width: 100%;
+    }
+  
+   .MessageFac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+    .div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   #acce{
+    margin-left: 10px;
+   }
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+    }
+} 
