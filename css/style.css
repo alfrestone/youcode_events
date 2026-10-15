@@ -47,9 +47,14 @@
     display: none;
 }
 
+
+.navbar button a{
+    text-decoration: none;
+        color: white;
+
+}
 .navbar button{
     background-color: #C2410C;
-    color: white;
     height: 48px;
     width: 119px;
     border-radius: 6px;
@@ -118,30 +123,36 @@
    
 }
 
+.btn1-section1 a{
+    text-decoration: none;
+        color: #FFFFFF;
 
+}
 .btn1-section1{
     background-color: #C2410C;
     height: 48px;
     width: 204px;
-    color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
     border-style: none;
     border-radius: 12px;
      cursor: pointer;
 }
+.btn2-section1 a{
+text-decoration: none;
+color: #C2410C;
 
+}
 .btn2-section1{
 height: 48px;
 width: 204px;
 border-radius: 12px;
 border-style: solid;
 border-color:  #C2410C;
-color: #C2410C;
 background-color: white;
   font-size: 16px;
     font-weight: 600;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .image-section1{
