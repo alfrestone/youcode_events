@@ -26,6 +26,7 @@
             <a href="#" id="register_button">S'inscrire</a>
             </ul>
         </nav>
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6" class="hidden_menu"/>
     </header>
 
     <!-- Hero Section -->
@@ -126,7 +127,7 @@
 
             <section>
                 <h3>YouCode Events</h3>
-                <p>Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
+                <p>Les ateliers, conférences, hackathons et rencontres de<br> YouCode, réunis au même endroit.</p>
             </section>
 
             <section class="footer-links">
@@ -149,13 +150,85 @@
                 </nav>
             </section>
         </div>
-
+        <hr>
         <!-- Copyright -->
         <div class="footer-copyright">
             <small>© 2026 YouCode Events — site fictif réalisé en formation.</small>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector(".hidden_menu");
+const navMenu = document.querySelector("header nav");
+const header = document.querySelector("header");
 
+function resetNavStyles() {
+    navMenu.style.display = "";
+    navMenu.style.flexDirection = "";
+    navMenu.style.alignItems = "";
+    navMenu.style.justifyContent = "";
+    navMenu.style.gap = "";
+    navMenu.style.position = "";
+    navMenu.style.top = "";
+    navMenu.style.left = "";
+    navMenu.style.right = "";
+    navMenu.style.width = "";
+    navMenu.style.flexBasis = "";
+    navMenu.style.backgroundColor = "";
+    navMenu.style.padding = "";
+    navMenu.style.zIndex = "";
+    navMenu.style.boxShadow = "";
+}
+
+function applyOpenStyles() {
+    header.style.position = "relative";
+    navMenu.style.display = "flex";
+    navMenu.style.flexDirection = "column";
+    navMenu.style.alignItems = "center";
+    navMenu.style.justifyContent = "flex-start";
+    navMenu.style.gap = "0.5rem";
+    navMenu.style.position = "absolute";
+    navMenu.style.top = "100%";
+    navMenu.style.left = "0";
+    navMenu.style.right = "0";
+    navMenu.style.width = "100%";
+    navMenu.style.flexBasis = "auto";
+    navMenu.style.backgroundColor = "#FFFFFF";
+    navMenu.style.padding = "1rem 0 1.5rem";
+    navMenu.style.zIndex = "1000";
+    navMenu.style.boxShadow = "0 8px 20px rgba(0, 0, 0, 0.08)";
+}
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("open");
+
+    if (isOpen) {
+        applyOpenStyles();
+    } else {
+        resetNavStyles();
+    }
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+});
+
+navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        resetNavStyles();
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+    });
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        navMenu.classList.remove("open");
+        resetNavStyles();
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+    }
+});
+    </script>
 </body>
 
 </html>
