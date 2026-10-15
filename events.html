@@ -9,8 +9,21 @@
 </head>
 <body>
 <header>
-    <nav>
-        <div> YouCode <span class="event-p"> Events </span></div>
+    <nav class="navbar">
+        <a> YouCode <span class="event-p"> Events </span></a>
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="HeaderDetails">
+
+            <svg width="28" height="28" viewBox="0 0 48 48"
+                 fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M16 18H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 24H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 30H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
         <div class="HeaderDetails">
             <a href="#"> Accueil </a>
             <a href="#"> Évenements </a>
@@ -132,5 +145,6 @@
         <p> &copy; 2026 YouCode Events — site fictif réalisé en formation.</p>
     </div>
 </footer>
+<script src="menu.js" defer></script>
 </body>
 </html>
