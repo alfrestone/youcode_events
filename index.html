@@ -247,6 +247,14 @@
       </div>
     </footer>
 
-     <script src="script.js"></script>
+     <script>
+const menu = document.querySelector(".menu");
+const navRight = document.querySelector(".nav-right");
+
+menu.addEventListener("click", function () {
+    navRight.classList.toggle("open");
+});
+</script>
+
   </body>
 </html>
