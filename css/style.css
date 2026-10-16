@@ -48,6 +48,8 @@
 }
 
 
+
+
 .navbar button a{
     text-decoration: none;
         color: white;
@@ -65,11 +67,14 @@
 }
 .navbar a{
     color: #1C1917;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
 }
 
+nav a.active{
+    color: #C2410C;
+}
 /* SECTION 1 */
 
 .section1{
