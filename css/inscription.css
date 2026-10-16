@@ -226,8 +226,12 @@ font-size: 14px;
 
 
 
-@media only screen and (max-width:768px){
- 
+@media only screen and (max-width:375px){
+   header{
+    display:flex;
+    justify-content: space-around;
+    padding: 0;
+   }
  
    .links {
        display: none;
