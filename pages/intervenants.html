@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/intervenants.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+    <title>YouCode Events - Intervenants et partenaires</title>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div>
+            <strong>YouCode <span>Events</span></strong>
+        </div>
+        <nav>
+            <a href="/index.html">Accueil</a>
+            <a href="/pages/events.html">Événements</a>
+            <a href="/pages/intervenants.html" id="selected_page">Intervenants</a>
+            <a href="/pages/inscription.html" id="register_button">S'inscrire</a>
+            </ul>
+        </nav>
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"
+            class="hidden_menu" />
+    </header>
+
+    <!-- Hero Section -->
+    <section class="top-section">
+        <h1>Intervenants et partenaires</h1>
+        <p>Les professionnels qui animent les événements YouCode et les entreprises qui les soutiennent.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Intervenants Section -->
+        <section class="main">
+            <h2>Intervenants</h2>
+
+            <div>
+                <!-- Card 1 -->
+                <article>
+                    <img src="/assets/images/orange-avatar.png" alt="Avatar de Salma Bennani">
+                    <h3>Salma Bennani</h3>
+                    <p><strong>Développeuse front-end</strong></p>
+                    <p>Spécialiste de l'accessibilité, elle anime la conférence Accessibilité Web.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article>
+                    <img src="/assets/images/green-avatar.png" alt="Avatar de Youssef Amrani">
+                    <h3>Youssef Amrani</h3>
+                    <p><strong>Designer UI</strong></p>
+                    <p>Construit des Design Systems et anime la conférence Du design au code.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article>
+                    <img src="/assets/images/orange-avatar.png" alt="Avatar de Imane El Idrissi">
+                    <h3>Imane El Idrissi</h3>
+                    <p><strong>Développeuse full-stack</strong></p>
+                    <p>Mentore du Hackathon Green Code, attentive à l'éco-conception.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article>
+                    <img src="/assets/images/green-avatar.png" alt="Avatar de Karim Ouazzani">
+                    <h3>Karim Ouazzani</h3>
+                    <p><strong>Lead développeur</strong></p>
+                    <p>Accompagne les équipes sur Git Flow et la revue de code.</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article>
+                    <img src="/assets/images/orange-avatar.png" alt="Avatar de Nadia Tazi">
+                    <h3>Nadia Tazi</h3>
+                    <p><strong>Cheffe de projet digital</strong></p>
+                    <p>Organise les rencontres entre apprenants et professionnels.</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article>
+                    <img src="/assets/images/green-avatar.png" alt="Avatar de Omar Chraibi">
+                    <h3>Omar Chraibi</h3>
+                    <p><strong>Intégrateur web</strong></p>
+                    <p>Anime l'atelier Flexbox et CSS Grid.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Partenaires Section -->
+        <section class="under-main">
+            <h2>Partenaires</h2>
+            <p>Ils accueillent nos événements, proposent des intervenants ou des sujets pour les hackathons.</p>
+            <ul>
+                <li>
+                    <span></span> Atlas Numérique
+                </li>
+                <li>
+                    <span></span> Safi Code Lab
+                </li>
+                <li>
+                    <span></span> Oasis Cloud
+                </li>
+                <li>
+                    <span></span> Medina Data
+                </li>
+                <li>
+                    <span></span> Argan Studio
+                </li>
+                <li>
+                    <span></span> Nador Tech Hub
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <section>
+                <h3>YouCode Events</h3>
+                <p>Les ateliers, conférences, hackathons et rencontres de<br> YouCode, réunis au même endroit.</p>
+            </section>
+
+            <section class="footer-links">
+                <nav>
+                    <ul>
+                        <h4>Navigation</h4>
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/pages/events.html">Événements</a></li>
+                        <li><a href="/pages/intervenants.html">Intervenants et partenaires</a></li>
+                        <li><a href="/pages/inscription.html">Inscription</a></li>
+                    </ul>
+
+                    <div>
+                        <ul>
+                            <h4>Contact</h4>
+                            <li><a href="mailto:contact@youcode-events.example">contact@youcode-events.example</a></li>
+                            <li>Youssoufia Safi Nador</li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <hr>
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <small>© 2026 YouCode Events — site fictif réalisé en formation.</small>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector(".hidden_menu");
+        const navMenu = document.querySelector("header nav");
+        const header = document.querySelector("header");
+
+        function resetNavStyles() {
+            navMenu.style.display = "";
+            navMenu.style.flexDirection = "";
+            navMenu.style.alignItems = "";
+            navMenu.style.justifyContent = "";
+            navMenu.style.gap = "";
+            navMenu.style.position = "";
+            navMenu.style.top = "";
+            navMenu.style.left = "";
+            navMenu.style.right = "";
+            navMenu.style.width = "";
+            navMenu.style.flexBasis = "";
+            navMenu.style.backgroundColor = "";
+            navMenu.style.padding = "";
+            navMenu.style.zIndex = "";
+            navMenu.style.boxShadow = "";
+        }
+
+        function applyOpenStyles() {
+            header.style.position = "relative";
+            navMenu.style.display = "flex";
+            navMenu.style.flexDirection = "column";
+            navMenu.style.alignItems = "center";
+            navMenu.style.justifyContent = "flex-start";
+            navMenu.style.gap = "0.5rem";
+            navMenu.style.position = "absolute";
+            navMenu.style.top = "100%";
+            navMenu.style.left = "0";
+            navMenu.style.right = "0";
+            navMenu.style.width = "100%";
+            navMenu.style.flexBasis = "auto";
+            navMenu.style.backgroundColor = "#FFFFFF";
+            navMenu.style.padding = "1rem 0 1.5rem";
+            navMenu.style.zIndex = "1000";
+            navMenu.style.boxShadow = "0 8px 20px rgba(0, 0, 0, 0.08)";
+        }
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navMenu.classList.toggle("open");
+
+            if (isOpen) {
+                applyOpenStyles();
+            } else {
+                resetNavStyles();
+            }
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+        });
+
+        navMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("open");
+                resetNavStyles();
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove("open");
+                resetNavStyles();
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+            }
+        });
+    </script>
+</body>
+
+</html>

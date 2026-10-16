@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>YouCode  <span> Events </span></h1>
+        </div>
+        <nav class="links">
+           
+
+          <div class="hidden-links-in-mobile"> <a href="">Accueil</a>
+            <a href="">Evenements</a>
+            <a href="">intervents</a>
+            <button id="but1">S'inscrire</button></div>  
+        </nav>
+
+ <button class="menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="HeaderDetails">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H17" stroke="#1C1917" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M1 1H17" stroke="#1C1917" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M1 13H17" stroke="#1C1917" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg> </button>
+
+
+    </header>
+    <main>
+        <section class="inscri">
+            <div class="reserve">
+                <h1 id="in">inscription</h1>
+                <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est
+                    gratuite.</p>
+            </div>
+        </section>
+
+
+        <div class="backgrond">
+
+            <section class="information-section">
+                <form class="formC" action="">
+                    <div class="Title-inscri">
+                        <h1><strong>Vos information </strong> </h1>
+                        <p>les champs marque * sont obligatoires</p>
+                    </div>
+                    <div class="div">
+                        <div class="divNOM">
+                            <span class="espace"><label id="N1" for="inpo1">Nom *</label>
+                                <input class="input12" id="inpo1" required placeholder="votre nom" type="text"
+                                    name="vote nom"></span>
+                            <span class="espace"> <label for="colpre">Prenom *</label>
+                                <input class="input12" id="colpre" required placeholder="votre Prenom" type="text">
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="div">
+                        <div class="divAdress">
+                            <span> <label for="coladres">Adresse e-mail *</label>
+                                <input class="input12" id="coladres" required placeholder="votre e-mail"
+                                    type="email"></span>
+
+                            <span><label for="tele">Telephone</label>
+                                <input class="input12" id="tele" placeholder="votre Telephone" type="number"> </span>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="div">
+                        <span class="evenmedia">
+                            <label id="eve" for="">Evenement choisi</label>
+                            <select required name="Evenement" id="selec">Evenement
+                                <option value="">Youcode Evenement</option>
+                                <option value="">Youcode Evenement</option>
+                                <option value="">Youcode Evenement</option>
+
+                            </select>
+                        </span>
+
+                    </div>
+
+
+                    <div class="div">
+                        <div>
+                            <h4>Nevau *</h4>
+                        </div>
+                        <div>
+
+                            <input id="debetant" required name="name" type="radio"> <label
+                                for="debetant">debutant</label>
+                            <input id="inter" required name="name" type="radio"> <label for="inter">intermedier</label>
+                            <input id="avan" required name="name" type="radio"> <label for="avan">Avance</label>
+
+                        </div>
+                    </div>
+
+                    <div class="MessageFac"> <label for="mfI"> Message(facultatif)</label>
+                        <input id="mfI" placeholder="Vos attentes,Vos question..." type="text">
+
+                    </div>
+                    <div class="div">
+                        <input id="laccepte" required type="checkbox">
+                        <label id="acce" for="laccepte">J'accepte que mes donnes servent a gerer mon inscription.*</label>
+
+                    </div>
+                    <div class="div">
+                        <button type="submit">Valider mon inscription</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="description-events">
+                <h3>YouCode Events</h3>
+                <p>
+                    Les ateliers, conférences, hackathons et rencontres de <br />
+                    YouCode, réunis au même endroit.
+                </p>
+            </div>
+
+            <div class="navigation-events">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">Intervenants et partenaires</a></li>
+                    <li><a href="#">Inscription</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-events">
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:contact@youcode-events.example">contact@youcode-events.example</a>
+                </p>
+                <p class="footer-locations">Youssoufia · Safi · Nador</p>
+            </div>
+        </div>
+
+        <hr class="ligne-footer" />
+        <div class="footer-bottom">
+            <p>&copy; 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </div>
+    </footer>
+<script>const menu = document.querySelector(".menu");
+const navRight = document.querySelector(".links");
+
+menu.addEventListener("click", function () {
+    navRight.classList.toggle("open");
+});</script>
+</body>
+
+
+</html>
