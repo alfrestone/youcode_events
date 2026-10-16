@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: black;
+}
+
+header {
+    background: #ffffff;
+    min-height: 80px;
+    height: auto;
+    padding: 20px 70px;
+    width: 100%;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    color: #1C1917;
+    font-weight: 700;
+}
+
+.event-p {
+    color: firebrick;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.HeaderDetails {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.HeaderDetails a {
+    text-decoration: none;
+    color: #1C1917;
+}
+
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: #1C1917;
+    cursor: pointer;
+}
+
+.HeaderDetails .btnLog {
+    display: inline-block;
+    background: brown;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.eventIntro {
+    background: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 180px;
+    padding-left: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.desc-intro {
+    max-width: 700px;
+    font-size: medium;
+    font-family: "Roboto Light", serif;
+}
+
+.num_even {
+    font-family: "Abadi MT Condensed Light", serif;
+}
+
+.hero {
+    margin: 40px 60px 40px 60px;
+}
+
+.Grid-Hero {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 0;
+}
+
+.event-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.09);
+}
+
+.event-card img {
+    display: block;
+    width: 100%;
+    height: 108px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 12px 14px 14px;
+}
+
+.category {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.atelier,
+.hackathon {
+    background: #ffecd7;
+    color: #a93208;
+}
+
+.conference,
+.rencontre {
+    background: #ccf8ef;
+    color: #08796e;
+}
+
+.event-content h3 {
+    font-size: 12px;
+    line-height: 1.5;
+    min-height: 36px;
+    margin-bottom: 6px;
+}
+
+.event-info {
+    font-size: 9px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.event-content a {
+    display: inline-block;
+    margin-top: 3px;
+    font-size: 10px;
+    color: #c43d0b;
+    text-decoration: none;
+}
+
+.event-content a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1C1917;
+    color: #FFFFFF;
+    min-height: 329px;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.description-events h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.description-events p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.navigation-events h4, .contact-events h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.navigation-events a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 1.6;
+}
+
+.navigation-events ul {
+    list-style: none;
+}
+
+.contact-events a {
+    text-decoration: none;
+    color: #ffff;
+    line-height: 2;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contact-events {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 2;
+}
+
+.ligne-footer {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #57534E;
+}
+
+.footer-bottom p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* this media is for tablet */
+@media (min-width: 481px) and (max-width: 700px) {
+    header {
+        height: auto;
+        padding: 12px 20px;
+    }
+
+    nav {
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .HeaderDetails {
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    header .btnLog {
+        font-size: 11px;
+        width: auto;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .eventIntro {
+        height: auto;
+        min-height: 140px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .desc-intro {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .hero {
+        margin: 25px 20px;
+    }
+
+    .Grid-Hero {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .event-card img {
+        height: 100px;
+    }
+
+    .event-content {
+        padding: 10px;
+    }
+
+    .event-content h3 {
+        font-size: 12px;
+    }
+
+    footer {
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .description-events h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .description-events p,
+    .navigation-events a,
+    .contact-events a,
+    .contact-events {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .description-events br {
+        display: none;
+    }
+
+    .navigation-events h4,
+    .contact-events h4 {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .navigation-events ul {
+        padding-left: 0;
+    }
+
+    .ligne-footer {
+        margin: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
+
+ /*this media is for mobile: 480px and below */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 12px 16px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .HeaderDetails {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        width: 100%;
+        margin-left: 0;
+        padding: 15px 0 8px;
+        font-size: 14px;
+    }
+
+    .HeaderDetails.open {
+        display: flex;
+    }
+
+    .HeaderDetails a {
+        font-size: 14px;
+    }
+
+    .HeaderDetails .btnLog {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .eventIntro {
+        height: auto;
+        min-height: 120px;
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .desc-intro {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .hero {
+        margin: 22px 12px 28px;
+    }
+
+    .Grid-Hero {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .event-card img {
+        height: 100px;
+    }
+
+    .event-content {
+        padding: 10px;
+    }
+
+    .event-content h3 {
+        font-size: 12px;
+        min-height: 0;
+        margin-bottom: 8px;
+    }
+
+    .event-info {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        height: auto;
+        padding: 22px 14px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 20px;
+    }
+
+    .description-events h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .description-events p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .description-events br {
+        display: none;
+    }
+
+    .navigation-events h4,
+    .contact-events h4 {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .navigation-events ul {
+        padding-left: 0;
+    }
+
+    .navigation-events a,
+    .contact-events a,
+    .contact-events {
+        font-size: 11px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .ligne-footer {
+        margin: 18px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+}
