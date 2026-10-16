@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Events </title>
-    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="../css/events.css">
 </head>
 <body>
 <header>
@@ -25,8 +25,8 @@
             </svg>
         </button>
         <div class="HeaderDetails">
-            <a href="#"> Accueil </a>
-            <a href="#"> Évenements </a>
+            <a href="../index.html"> Accueil </a>
+            <a href="events.html"> Évenements </a>
             <a href="intervenants.html"> Intervenants </a>
             <button class="btnLog" type="button"> S'inscrire</button>
         </div>
@@ -48,7 +48,7 @@
 
         <div class="Grid-Hero">
             <article class="event-card">
-                <img src="images/event1.png" alt="Illustration Flexbox et Grid">
+                <img src="../assets/images/event1.png" alt="Illustration Flexbox et Grid">
                 <div class="event-content">
                     <span class="category atelier">Atelier</span>
                     <h3>Atelier Flexbox et CSS Grid</h3>
@@ -59,7 +59,7 @@
             </article>
 
             <article class="event-card">
-                <img src="images/event2.png" alt="Illustration sur l'accessibilité">
+                <img src="../assets/images/event2.png" alt="Illustration sur l'accessibilité">
                 <div class="event-content">
                     <span class="category conference">Conférence</span>
                     <h3>Accessibilité Web : par où commencer ?</h3>
@@ -70,7 +70,7 @@
             </article>
 
             <article class="event-card">
-                <img src="images/event3.png" alt="Illustration du Green Code">
+                <img src="../assets/images/event3.png" alt="Illustration du Green Code">
                 <div class="event-content">
                     <span class="category hackathon">Hackathon</span>
                     <h3>Hackathon Green Code</h3>
@@ -81,7 +81,7 @@
             </article>
 
             <article class="event-card">
-                <img src="images/event4.png" alt="Illustration d'une rencontre">
+                <img src="../assets/images/event4.png" alt="Illustration d'une rencontre">
                 <div class="event-content">
                     <span class="category rencontre">Rencontre</span>
                     <h3>Rencontre avec des développeurs front-end</h3>
@@ -92,7 +92,7 @@
             </article>
 
             <article class="event-card">
-                <img src="images/event5.png" alt="Illustration d'un GitFlow">
+                <img src="../assets/images/event5.png" alt="Illustration d'un GitFlow">
                 <div class="event-content">
                     <span class="category atelier">Atelier</span>
                     <h3>Atelier Git Flow en pratique</h3>
@@ -103,7 +103,7 @@
             </article>
 
             <article class="event-card">
-                <img src="images/event6.png" alt="Illustration du design avec Figma">
+                <img src="../assets/images/event6.png" alt="Illustration du design avec Figma">
                 <div class="event-content">
                     <span class="category conference">Conférence</span>
                     <h3>Du design au code : travailler avec Figma</h3>
@@ -126,10 +126,10 @@
         <div class="navigation-events">
             <h4>Navigation</h4>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants et partenaires</a></li>
-                <li><a href="#">Inscription</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="events.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants et partenaires</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
             </ul>
         </div>
 
@@ -145,6 +145,25 @@
         <p> &copy; 2026 YouCode Events — site fictif réalisé en formation.</p>
     </div>
 </footer>
-<script src="menu.js" defer></script>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".HeaderDetails");
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu"
+        );
+    });
+
+    navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+        });
+    });
+</script>
 </body>
 </html>
