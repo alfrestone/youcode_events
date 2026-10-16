@@ -364,8 +364,7 @@ footer {
     }
 }
 
- /*this media is for mobile: 480px and below */
-
+/*this media is for mobile */
 @media (max-width: 480px) {
 
     header {
@@ -391,8 +390,8 @@ footer {
     .HeaderDetails {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 16px;
         width: 100%;
         margin-left: 0;
